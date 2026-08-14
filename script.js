@@ -78,14 +78,20 @@ document.getElementById("btn7").addEventListener("click", function() {
 // Ao clicar no botao, adicione a classe "destaque" ao #texto8
 //
 // Dica: use .classList.add("destaque")
+document.getElementById("btn8").addEventListener("click", function() {
+    document.getElementById("texto8").classList.add("destaque");
+});
 
 
-
-// ---------- Exercicio 9 ----------
+//---------- Exercicio 9 ---------- 
 // Ao clicar no botao, remova o ultimo <li> da #lista9
-//
+// 
 // Dica: use .lastElementChild e .removeChild()
-
+document.getElementById("btn9").addEventListener("click", function() {
+    document.getElementById("lista9").removeChild(
+        document.getElementById("lista9").lastElementChild
+    );
+});
 
 
 // ---------- Exercicio 10 ----------
@@ -93,4 +99,6 @@ document.getElementById("btn7").addEventListener("click", function() {
 // "https://placecats.com/300/200"
 //
 // Dica: use .src = "nova-url"
-
+document.getElementById("btn10").addEventListener("click", function() {
+    document.getElementById("imagem10").src = "https://placecats.com/300/200";
+});
