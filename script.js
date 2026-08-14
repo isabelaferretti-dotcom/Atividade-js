@@ -38,7 +38,9 @@ document.getElementById("btn3").addEventListener("click", () => {
 // "Novo item" dentro da lista #lista4
 //
 // Dica: use document.createElement() e .appendChild()
-
+document.getElementById("btn4").addEventListener("click", () => {
+    document.getElementById("lista4").appendChild(document.createElement("li")).textContent = "Novo item";
+    });
 
 
 // ---------- Exercicio 5 ----------
@@ -46,7 +48,9 @@ document.getElementById("btn3").addEventListener("click", () => {
 // para amarelo
 //
 // Dica: use .style.backgroundColor = "yellow"
-
+document.getElementById("btn5").addEventListener("click", () => {
+    document.getElementById("caixa5").style.backgroundColor = "yellow";
+    });
 
 
 // ---------- Exercicio 6 ----------
@@ -54,8 +58,10 @@ document.getElementById("btn3").addEventListener("click", () => {
 //
 // Dica: leia o valor atual com .textContent, converta para
 // numero com Number() e some 1
-
-
+document.getElementById("btn6").addEventListener("click", () => {
+    document.getElementById("contador6").textContent =
+        Number(document.getElementById("contador6").textContent) + 1;
+});
 
 // ---------- Exercicio 7 ----------
 // Ao clicar no botao, pegue o valor digitado no #input7
