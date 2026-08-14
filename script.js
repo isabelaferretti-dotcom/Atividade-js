@@ -102,3 +102,4 @@ document.getElementById("btn9").addEventListener("click", function() {
 document.getElementById("btn10").addEventListener("click", function() {
     document.getElementById("imagem10").src = "https://placecats.com/300/200";
 });
+
